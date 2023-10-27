@@ -1,4 +1,4 @@
-import Card from "@/components/Card/Card";
+import CardMovie from "@/components/CardMovie/CardMovie";
 import { GetMovies } from "@/service/api";
 import { MoviesType } from "@/types/types";
 
@@ -11,7 +11,7 @@ export default async function Popular() {
       <div>
         {movies.map((item: MoviesType) => {
           return (
-            <Card
+            <CardMovie
               key={item.id}
               title={item.title}
               overview={item.overview}
