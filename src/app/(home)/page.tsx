@@ -1,4 +1,4 @@
-import Popular from "@/components/PopularMovies/Popular";
+import Popular from "@/app/(home)/PopularMovies/Popular";
 
 export default function Home() {
   return (
