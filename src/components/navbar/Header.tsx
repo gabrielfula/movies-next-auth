@@ -17,11 +17,19 @@ export default function Header() {
           <AlignLeft />
         </SheetTrigger>
         <SheetContent className="w-[400px] sm:w-[540px]" side={"left"}>
-          <SheetHeader>
-            <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+          <SheetHeader className="space-y-4">
+            <SheetTitle className="text-zinc-200">Menu</SheetTitle>
             <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+              <a href="">Aventura</a>
+            </SheetDescription>
+            <SheetDescription>
+              <a href="">Ação</a>
+            </SheetDescription>
+            <SheetDescription>
+              <a href="">Infantil</a>
+            </SheetDescription>
+            <SheetDescription>
+              <a href="">Filmes</a>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>
