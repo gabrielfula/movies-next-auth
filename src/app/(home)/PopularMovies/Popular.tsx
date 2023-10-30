@@ -8,7 +8,7 @@ export default async function Popular() {
   return (
     <div>
       <h1 className="font-bold text-xl">Popular</h1>
-      <div>
+      <div className="grid grid-cols-auto justify-center">
         {movies.map((item: MoviesType) => {
           return (
             <CardMovie
