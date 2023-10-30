@@ -15,5 +15,5 @@ export const GetIndividual = async (id: string) => {
 
   const data = await response.json();
 
-  return data.results;
+  return data;
 };
