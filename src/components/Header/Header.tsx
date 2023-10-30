@@ -8,6 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -35,9 +36,9 @@ export default function Header() {
         </SheetContent>
       </Sheet>
       <div>
-        <h1 className="text-lg">
+        <Link href="/" className="text-lg">
           <span className="text-red-700">Fula</span>Movies
-        </h1>
+        </Link>
       </div>
       <div className="flex text-sm gap-2 items-center cursor-pointer">
         <p>Fazer Login</p>
