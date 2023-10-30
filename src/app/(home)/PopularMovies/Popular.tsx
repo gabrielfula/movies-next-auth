@@ -12,7 +12,7 @@ export default async function Popular() {
         {movies.map((item: MoviesType) => {
           return (
             <CardMovie
-              key={item.id}
+              id={item.id}
               title={item.title}
               overview={item.overview}
               poster_path={item.poster_path}
