@@ -7,7 +7,7 @@ export default async function Popular() {
 
   return (
     <div>
-      <h1>Popular</h1>
+      <h1 className="font-bold text-xl">Popular</h1>
       <div>
         {movies.map((item: MoviesType) => {
           return (
