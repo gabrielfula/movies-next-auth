@@ -3,7 +3,7 @@ import { GetMovies } from "@/service/api";
 import { MoviesType } from "@/types/types";
 
 export default async function Popular() {
-  const movies = await GetMovies("now_playing");
+  const movies = await GetMovies("popular");
 
   return (
     <div>
