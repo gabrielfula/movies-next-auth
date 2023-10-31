@@ -3,7 +3,7 @@ import { GetMovies } from "@/service/api";
 import { MoviesType } from "@/types/types";
 
 export default async function Popular() {
-  const movies = await GetMovies("popular");
+  const movies = await GetMovies("now_playing");
 
   return (
     <div>
@@ -12,6 +12,7 @@ export default async function Popular() {
         {movies.map((item: MoviesType) => {
           return (
             <CardMovie
+              key={item.id}
               id={item.id}
               title={item.title}
               overview={item.overview}
