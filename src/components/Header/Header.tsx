@@ -1,4 +1,3 @@
-"use client";
 import { AlignLeft, LogIn } from "lucide-react";
 import { Card } from "../ui/card";
 import {
@@ -10,19 +9,11 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 import Link from "next/link";
-import { signIn, signOut, useSession } from "next-auth/react";
+import Login from "../Login/Login";
+
+// useSession
 
 export default function Header() {
-  const { status, data } = useSession();
-
-  const handleLogin = async () => {
-    await signIn();
-  };
-
-  const handleLogout = async () => {
-    await signOut();
-  };
-
   return (
     <Card className="w-full flex justify-between items-center">
       <Sheet>
@@ -52,13 +43,7 @@ export default function Header() {
           <span className="text-red-700">Fula</span>Movies
         </Link>
       </div>
-      <div
-        className="flex text-sm gap-2 items-center cursor-pointer"
-        onClick={handleLogin}
-      >
-        <p>Fazer Login</p>
-        <LogIn />
-      </div>
+      <Login />
     </Card>
   );
 }
