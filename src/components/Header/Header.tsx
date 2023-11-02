@@ -1,4 +1,4 @@
-import { AlignLeft, LogIn } from "lucide-react";
+import { AlignLeft, LogIn, Search } from "lucide-react";
 import { Card } from "../ui/card";
 import {
   Sheet,
@@ -10,7 +10,6 @@ import {
 } from "../ui/sheet";
 import Link from "next/link";
 import Login from "../Login/Login";
-import { Input } from "../ui/input";
 
 // useSession
 
@@ -55,8 +54,15 @@ export default function Header() {
           <span className="text-red-700">Fula</span>Movies
         </Link>
       </div>
-      <div className="flex gap-10 items-center">
-        <Input type="email" placeholder="Email" className="h-8" />
+      <div className="flex gap-10 items-center bg-zinc-50 p-1 rounded">
+        <input
+          type="text"
+          placeholder="Search Movie..."
+          className="h-8 outline-none border-none rounded-none bg-none focus:outline-none"
+        />
+        <button className="outline-none bg-none border-none">
+          <Search color="black" />
+        </button>
       </div>
     </Card>
   );
