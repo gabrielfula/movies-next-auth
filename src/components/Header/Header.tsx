@@ -1,4 +1,4 @@
-import { AlignLeft, LogIn, Search } from "lucide-react";
+import { AlignLeft, Search } from "lucide-react";
 import { Card } from "../ui/card";
 import {
   Sheet,
@@ -11,9 +11,8 @@ import {
 import Link from "next/link";
 import Login from "../Login/Login";
 
-// useSession
-
 export default function Header() {
+
   return (
     <Card className="w-full flex justify-between items-center pr-10">
       <Sheet>
@@ -58,7 +57,7 @@ export default function Header() {
         <input
           type="text"
           placeholder="Search Movie..."
-          className="h-8 outline-none border-none rounded-none bg-none focus:outline-none"
+          className="h-6 outline-none px-2 border-none rounded-none bg-none focus:outline-none text-black"
         />
         <button className="outline-none bg-none border-none">
           <Search color="black" />
