@@ -9,6 +9,8 @@ interface MoviesSearchProps {
 }
 
 export default async function SearchMovie({ params }: MoviesSearchProps) {
+  // await new Promise((resolve) => setTimeout(resolve, 1000));
+
   const movie = await GetSearch(params.movie);
 
   return (
