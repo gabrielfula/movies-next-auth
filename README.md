@@ -1,12 +1,12 @@
 ## Projeto de Filmes: Uma Experiência Cinematográfica Personalizada
 Tecnologias Utilizadas
-## * Next.js 13: Uma poderosa biblioteca JavaScript para a construção de aplicativos web modernos, proporcionando uma experiência de desenvolvimento rápida e eficiente.
+ Next.js 13: Uma poderosa biblioteca JavaScript para a construção de aplicativos web modernos, proporcionando uma experiência de desenvolvimento rápida e eficiente.
 
-## Tailwind CSS: Um framework de estilo utilitário que facilita a criação de interfaces bonitas e responsivas de forma rápida.
+ Tailwind CSS: Um framework de estilo utilitário que facilita a criação de interfaces bonitas e responsivas de forma rápida.
 
-## Shadcn UI: Uma biblioteca de componentes que adiciona estilo e interatividade à interface do usuário, contribuindo para uma experiência visual atraente.
+ Shadcn UI: Uma biblioteca de componentes que adiciona estilo e interatividade à interface do usuário, contribuindo para uma experiência visual atraente.
 
-## Next-Auth: Uma biblioteca que simplifica a autenticação em aplicativos Next.js, permitindo aos usuários fazer login usando diferentes provedores de autenticação, como o Google.
+ Next-Auth: Uma biblioteca que simplifica a autenticação em aplicativos Next.js, permitindo aos usuários fazer login usando diferentes provedores de autenticação, como o Google.
 
 ## Funcionalidades Atuais
 1. Login com Autenticação do Google
