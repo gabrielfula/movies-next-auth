@@ -1,5 +1,6 @@
+import { GetMovies } from "@/app/api/GetData/route";
 import CardMovie from "@/components/CardMovie/CardMovie";
-import { GetMovies } from "@/service/api";
+
 import { MoviesType } from "@/types/types";
 
 export default async function Popular() {
