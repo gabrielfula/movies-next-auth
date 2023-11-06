@@ -1,3 +1,5 @@
+"use client";
+
 import { AlignLeft, Search } from "lucide-react";
 import { Card } from "../ui/card";
 import {
@@ -10,8 +12,18 @@ import {
 } from "../ui/sheet";
 import Link from "next/link";
 import Login from "../Login/Login";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+  const [value, setValue] = useState("");
+
+  const { push } = useRouter();
+
+  const handleClick = () => {
+    push(`/search/${value}`);
+    setValue("");
+  };
 
   return (
     <Card className="w-full flex justify-between items-center pr-10">
@@ -22,7 +34,7 @@ export default function Header() {
         <SheetContent className="w-[400px] sm:w-[540px]" side={"left"}>
           <SheetHeader className="space-y-6">
             <SheetTitle className="text-zinc-200">Menu</SheetTitle>
-            <SheetDescription className="hover:text-zinc-50 transition-all">
+            <SheetDescription>
               <Login />
             </SheetDescription>
             <SheetDescription>
@@ -58,8 +70,13 @@ export default function Header() {
           type="text"
           placeholder="Search Movie..."
           className="h-6 outline-none px-2 border-none rounded-none bg-none focus:outline-none text-black"
+          onChange={(event) => setValue(event.target.value)}
+          value={value}
         />
-        <button className="outline-none bg-none border-none">
+        <button
+          className="outline-none bg-none border-none"
+          onClick={handleClick}
+        >
           <Search color="black" />
         </button>
       </div>

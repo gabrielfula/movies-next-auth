@@ -21,6 +21,8 @@ export default async function MoviesIndividual({
 }: MoviesIndividualProps) {
   const movie = await GetIndividual(params.id);
 
+  console.log(params.id);
+
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Card className="flex flex-col items-center lg:flex-row lg:items-start">
