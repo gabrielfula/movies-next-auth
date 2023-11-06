@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { KeyboardEventHandler, useState } from "react";
 import { Search } from "lucide-react";
 
 import { useRouter } from "next/navigation";
@@ -8,11 +8,19 @@ import { useRouter } from "next/navigation";
 export default function SearchMovie() {
   const [value, setValue] = useState("");
 
+  const ENTER_KEY = 13;
+
   const { push } = useRouter();
 
   const handleClick = () => {
     push(`/search/${value}`);
     setValue("");
+  };
+
+  const onKeyDown = (event: KeyboardEventHandler<HTMLInputElement>) => {
+    if (event.which === ENTER_KEY) {
+      handleClick();
+    }
   };
 
   return (
@@ -23,6 +31,7 @@ export default function SearchMovie() {
         className="outline-none border-none rounded-none bg-none focus:outline-none pl-2 text-black w-full"
         onChange={(event) => setValue(event.target.value)}
         value={value}
+        onKeyDown={onKeyDown}
       />
       <button
         className="outline-none bg-none border-none"
