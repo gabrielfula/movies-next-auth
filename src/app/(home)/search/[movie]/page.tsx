@@ -14,7 +14,7 @@ export default async function SearchMovie({ params }: MoviesSearchProps) {
   return (
     <>
       <div className="flex justify-center items-center">
-        <h1 className="text-lg">
+        <h1 className="text-lg text-center">
           Esses são os resultados para:
           <span className="text-red-600 uppercase pl-2">{params.movie}</span>
         </h1>
