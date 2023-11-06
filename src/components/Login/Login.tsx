@@ -16,10 +16,12 @@ export default function Login() {
             <Avatar>
               <AvatarImage src={data.user?.image} />
             </Avatar>
-            <p>{data.user?.name}</p>
+            <p className="hover:text-zinc-50 transition-all">
+              {data.user?.name}
+            </p>
           </div>
           <div className="mt-5" onClick={() => signOut()}>
-            <button className="flex gap-3 text-sm">
+            <button className="flex gap-3 text-sm hover:text-zinc-50 transition-all">
               Fazer Logout <LogOut size={20} />
             </button>
           </div>
