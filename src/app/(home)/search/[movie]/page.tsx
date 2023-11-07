@@ -1,4 +1,3 @@
-
 import CardMovie from "@/components/CardMovie/CardMovie";
 import { GetSearch } from "@/service/api";
 import { MoviesType } from "@/types/types";
@@ -31,6 +30,7 @@ export default async function SearchMovie({ params }: MoviesSearchProps) {
               title={item.title}
               overview={item.overview}
               poster_path={item.poster_path}
+              vote_average={item.vote_average}
             />
           );
         })}
