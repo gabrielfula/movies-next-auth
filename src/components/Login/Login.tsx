@@ -14,7 +14,7 @@ export default function Login() {
         <div>
           <div className="flex gap-3">
             <Avatar>
-              <AvatarImage src={data.user?.image} />
+              {data.user?.image && <AvatarImage src={data.user.image} />}
             </Avatar>
             <p className="hover:text-zinc-50 transition-all">
               {data.user?.name}
