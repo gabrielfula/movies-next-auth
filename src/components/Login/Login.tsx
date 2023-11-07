@@ -33,7 +33,9 @@ export default function Login() {
             className="flex text-sm gap-2 items-center cursor-pointer"
             onClick={() => signIn("google")}
           >
-            <p>Fazer Login</p>
+            <p className="flex gap-2 text-center">
+              Fazer Login <LogIn size={20} />
+            </p>
           </div>
         </p>
       )}
