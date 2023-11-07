@@ -6,6 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { GetIndividual } from "@/service/api";
+import { Star } from "lucide-react";
 
 import Image from "next/image";
 import { Suspense } from "react";
@@ -40,6 +41,12 @@ export default async function MoviesIndividual({
             <CardDescription className="text-sm">
               {movie.release_date}
             </CardDescription>
+          </div>
+          <div className="flex gap-2 items-center">
+            <p className="flex items-baseline gap-2">
+              {movie.vote_average}
+              <Star size={15} color="yellow" />
+            </p>
           </div>
           <div className="pt-4">
             <CardDescription className="text-base lg:w-10/12 w-full text-zinc-400">
