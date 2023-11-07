@@ -1,7 +1,7 @@
+import { api, key } from "./key";
+
 export const GetMovies = async (categorie: string) => {
-  const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${categorie}?api_key=9aa78ca98887fa07d12c1b459bab0362`
-  );
+  const response = await fetch(`${api}/${categorie}?${key}`);
 
   const data = await response.json();
 
@@ -9,9 +9,7 @@ export const GetMovies = async (categorie: string) => {
 };
 
 export const GetIndividual = async (id: string) => {
-  const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}?api_key=9aa78ca98887fa07d12c1b459bab0362`
-  );
+  const response = await fetch(`${api}/${id}?${key}`);
 
   const data = await response.json();
 
@@ -19,9 +17,7 @@ export const GetIndividual = async (id: string) => {
 };
 
 export const GetSearch = async (search: string) => {
-  const response = await fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=9aa78ca98887fa07d12c1b459bab0362&query=${search}`
-  );
+  const response = await fetch(`${api}?${key}&query=${search}`);
 
   const data = await response.json();
 
