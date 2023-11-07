@@ -1,5 +1,6 @@
-import { GetSearch } from "@/app/api/GetData/route";
+
 import CardMovie from "@/components/CardMovie/CardMovie";
+import { GetSearch } from "@/service/api";
 import { MoviesType } from "@/types/types";
 
 interface MoviesSearchProps {

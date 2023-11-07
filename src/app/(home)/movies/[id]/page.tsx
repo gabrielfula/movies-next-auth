@@ -1,4 +1,3 @@
-import { GetIndividual } from "@/app/api/GetData/route";
 import {
   Card,
   CardContent,
@@ -6,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { GetIndividual } from "@/service/api";
 
 import Image from "next/image";
 import { Suspense } from "react";

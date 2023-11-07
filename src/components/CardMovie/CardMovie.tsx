@@ -4,7 +4,6 @@ import { MoviesType } from "@/types/types";
 import Image from "next/image";
 import { Card } from "../ui/card";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 export default function CardMovie({ title, poster_path, id }: MoviesType) {
   const { push } = useRouter();
@@ -25,7 +24,6 @@ export default function CardMovie({ title, poster_path, id }: MoviesType) {
       />
 
       <p className="truncate w-[9rem] text-sm">{title}</p>
-      {/* <p>OverView...</p> */}
     </Card>
   );
 }
