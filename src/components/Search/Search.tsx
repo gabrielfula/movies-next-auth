@@ -1,7 +1,7 @@
 "use client";
 
 import { KeyboardEventHandler, useState } from "react";
-import { Search } from "lucide-react"
+import { Search } from "lucide-react";
 
 import { useRouter } from "next/navigation";
 
@@ -17,7 +17,7 @@ export default function SearchMovie() {
     setValue("");
   };
 
-  const onKeyDown = (event: KeyboardEventHandler<HTMLInputElement>) => {
+  const onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.which === ENTER_KEY) {
       handleClick();
     }
