@@ -1,5 +1,6 @@
 const key = process.env.API_KEY;
-const api = process.env.API;
-const img = process.env.IMG;
+const apiRoute = process.env.API;
+const imgRoute = process.env.IMG;
+const searchRoute = process.env.SEARCH;
 
-export { key, api, img };
+export { key, apiRoute, imgRoute, searchRoute };

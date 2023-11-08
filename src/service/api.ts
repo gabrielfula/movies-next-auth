@@ -1,7 +1,7 @@
-import { api, key } from "./key";
+import { apiRoute, key, searchRoute } from "./key";
 
 export const GetMovies = async (categorie: string) => {
-  const response = await fetch(`${api}/${categorie}?${key}`);
+  const response = await fetch(`${apiRoute}/${categorie}?${key}`);
 
   const data = await response.json();
 
@@ -9,7 +9,7 @@ export const GetMovies = async (categorie: string) => {
 };
 
 export const GetIndividual = async (id: string) => {
-  const response = await fetch(`${api}/${id}?${key}`);
+  const response = await fetch(`${apiRoute}/${id}?${key}`);
 
   const data = await response.json();
 
@@ -17,7 +17,7 @@ export const GetIndividual = async (id: string) => {
 };
 
 export const GetSearch = async (search: string) => {
-  const response = await fetch(`${api}?${key}&query=${search}`);
+  const response = await fetch(`${searchRoute}?${key}&query=${search}`);
 
   const data = await response.json();
 
