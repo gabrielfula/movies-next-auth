@@ -24,3 +24,8 @@ Tecnologias Utilizadas <br />
 
 1. Busca de Filmes por Categoria
    Uma nova funcionalidade permitirá aos usuários explorar filmes com base em categorias específicas, proporcionando uma experiência de descoberta mais personalizada.
+
+
+## Deploy
+
+https://movies-next-gabrielfula.vercel.app
